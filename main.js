@@ -30,7 +30,6 @@ let currentYear =2017;
 let middleName;
 let age = currentYear - birthYear;
 
-console.log(age);
 
 
  // TODO 2:
@@ -44,9 +43,8 @@ console.log(age);
 
 
 let greeting ='Hello there ' + firstName +'!';
-let decades = Math.floor((birthYear  - 1900) / 10);
+let decades = ((birthYear - (birthYear - 1900) % 10) - 1900) /10;
 
-console.log(decades);
 
 
  // TODO 3:
@@ -163,6 +161,15 @@ function madlib (wordOne, wordTwo, wordThree, wordFour){
  //     a string provided as an argument. For example, reverse("jag testar")
  //     should return the string "ratset gaj".
 
+
+
+
+ function reverse (userString){
+ for (let i = 0; i <= userString.length; i++)
+ 	return(userString.charAt((userString.length + 1) - i));
+ }
+
+reverse("emosewa si nadroJ");
 
 
  /* ******************************************************************
