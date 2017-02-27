@@ -21,7 +21,16 @@
  // (c) Create an `age` variable that uses an expression to calculate your age from
  //     your `birthYear` and the `currentYear`
  //     (NOTE: DO NOT simply assign a number to the `age` variable, use an expression!)
+ //
 
+let firstName = 'Seth';
+let lastName = 'Brady';
+const birthYear = 1983;
+let currentYear =2017;
+let middleName;
+let age = currentYear - birthYear;
+
+console.log(age);
 
 
  // TODO 2:
@@ -33,6 +42,11 @@
  //     NOTE: This variable SHOULD NOT have any decimal places!
  //     NOTE: You MUST USE an expression for this, it may have more than one operation!
 
+
+let greeting ='Hello there ' + firstName +'!';
+let decades = Math.floor((birthYear  - 1900) / 10);
+
+console.log(decades);
 
 
  // TODO 3:
@@ -46,6 +60,22 @@
  //     Next, declare a variable called `review`, then either assign "good" or "bad"
  //         depending on the value of `instructorIsAwesome`
  //     NOTE: You MUST use code to determine which value to assign to `review`!
+
+let style;
+if (age < 35){
+  style = 'hip';
+}else {
+  style = 'classic';
+}
+
+let review;
+let instructorIsAwesome = true;
+if (instructorIsAwesome === true){
+  review = 'good';
+}else {
+  review = 'bad';
+}
+
 
 
 
@@ -62,6 +92,29 @@
  //     then it should return the value for something that is Not a Number
 
 
+function math(numberOne, numberTwo, operation  ){
+
+  if (operation === 'add'){
+    return (numberOne + numberTwo);
+  }
+    if (operation === 'subtract'){
+    return (numberOne - numberTwo);
+  }
+  if (operation === 'multiply'){
+    return (numberOne * numberTwo);
+  }
+  if (operation === 'divide'){
+    return (numberOne / numberTwo);
+    }else {
+      return (NaN);
+    }
+  }
+
+
+
+
+
+
 
 
  // TODO 5:
@@ -72,6 +125,30 @@
  //     Finally, the function should return that new sentence.
  // (b) If any of the words is not provided to the function then it should use
  //     the word "bananas" instead.
+
+
+
+
+
+
+
+function madlib (wordOne, wordTwo, wordThree, wordFour){
+
+  if (wordOne === undefined){
+    wordOne = 'bananas';
+    }
+  if (wordTwo === undefined){
+    wordTwo = 'bananas';
+   }
+  if (wordThree === undefined){
+    wordThree = 'bananas';
+      }
+  if (wordFour === undefined){
+    wordFour = 'bananas';
+    }
+
+  return ('I prefer ' + wordOne + ' while I ' + wordTwo + ' so that I don\'t ' + wordThree + ' on the ' + wordFour + '.');
+}
 
 
 
