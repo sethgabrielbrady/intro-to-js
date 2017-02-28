@@ -170,10 +170,10 @@ function madlib (wordOne, wordTwo, wordThree, wordFour){
 
  function reverse (inputString){
      let returnWord ="";
-     for (i = 1; i <= inputString.length; i++){
-     let OutputBackwards = inputString[inputString.length - i];
-     returnWord = returnWord + OutputBackwards;
-     }
+       for (i = 1; i <= inputString.length; i++){
+         let OutputBackwards = inputString[inputString.length - i];
+         returnWord = returnWord + OutputBackwards;
+        }
      return (returnWord);
  }
 
@@ -198,18 +198,20 @@ function translate (inputString){
   let currentChar="";
   let doubleChar ="";
   let newWord ="";
-  for (i = 0; i <= inputString.length; i++){
-  currentChar = inputString[i];
-  if (currentChar !== 'a' && currentChar !== 'e' && currentChar !== 'i' &&
-      currentChar !== 'o' && currentChar !== 'u'){
-      doubleChar = currentChar + 'o' + currentChar;
-      newWord = newWord + doubleChar;
-      }
+    for (i = 0; i <= inputString.length -1; i++){
+    currentChar = inputString[i];
+      if (currentChar !== 'a' && currentChar !== 'e' && currentChar !== 'i' &&
+          currentChar !== 'o' && currentChar !== 'u'&& currentChar !== 'y' &&
+          currentChar !== 'A' && currentChar !== 'E' && currentChar !== 'I' &&
+          currentChar !== 'O' && currentChar !== 'U' && currentChar !== 'Y' &&
+          currentChar !== ' '){
+          doubleChar = currentChar + 'o' + currentChar;
+          newWord = newWord + doubleChar;
+          }
       else {
-        newWord = newWord + currentChar;
+          newWord = newWord + currentChar;
+        }
       }
-      console.log(newWord);
-   }
   return (newWord);
 }
 
