@@ -140,8 +140,8 @@ function madlib (wordOne, wordTwo, wordThree, wordFour){
   if (wordOne === undefined){
     wordOne = 'bananas';
   }
-    if (wordTwo === undefined){
-      wordTwo = 'bananas';
+  if (wordTwo === undefined){
+    wordTwo = 'bananas';
   }
   if (wordThree === undefined){
     wordThree = 'bananas';
@@ -167,17 +167,6 @@ function madlib (wordOne, wordTwo, wordThree, wordFour){
  //     should return the string "ratset gaj".
 
 
-
-
- function reverse (userString){
-  let a=""
-  for (var i = 0; i < userString.length + 1; i++)
-  a = (userString.charAt((userString.length +i) - userString.length)) + a;
-  console.log(a);
-  return ('"' + a + '"');
-}
-
-reverse("emosewa si nadroJ");
 
 
  /* ******************************************************************
