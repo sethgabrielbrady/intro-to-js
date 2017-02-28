@@ -168,6 +168,16 @@ function madlib (wordOne, wordTwo, wordThree, wordFour){
 
 
 
+ function reverse (inputString){
+     let returnWord ="";
+     for (i = 1; i <= inputString.length; i++){
+     let OutputBackwards = inputString[inputString.length - i];
+     returnWord = returnWord + OutputBackwards;
+     }
+     return (returnWord);
+ }
+
+
 
  /* ******************************************************************
                               EPIC Mode
