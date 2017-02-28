@@ -194,6 +194,28 @@ function madlib (wordOne, wordTwo, wordThree, wordFour){
 
 
 
+function translate (inputString){
+  let currentChar="";
+  let doubleChar ="";
+  let newWord ="";
+  for (i = 0; i <= inputString.length; i++){
+  currentChar = inputString[i];
+  if (currentChar !== 'a' && currentChar !== 'e' && currentChar !== 'i' &&
+      currentChar !== 'o' && currentChar !== 'u'){
+      doubleChar = currentChar + 'o' + currentChar;
+      newWord = newWord + doubleChar;
+      }
+      else {
+        newWord = newWord + currentChar;
+      }
+      console.log(newWord);
+   }
+  return (newWord);
+}
+
+
+
+
 /* ***************************************************************
                           DO NOT EDIT
                      ANYTHING BELOW THIS LINE
