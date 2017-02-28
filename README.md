@@ -1,3 +1,17 @@
+Front Edd Homework
+
+2/27/17
+
+This assignment requires using variables, if statements, operators, and functions.
+
+
+
+
+
+
+
+
+
 # Introduction to JavaScript
 
 Let's get some hands-on practice writing JavaScript code. You should **fork and clone** this repository first.

@@ -26,7 +26,7 @@
 let firstName = 'Seth';
 let lastName = 'Brady';
 const birthYear = 1983;
-let currentYear =2017;
+let currentYear = 2017;
 let middleName;
 let age = currentYear - birthYear;
 
@@ -42,8 +42,8 @@ let age = currentYear - birthYear;
  //     NOTE: You MUST USE an expression for this, it may have more than one operation!
 
 
-let greeting ='Hello there ' + firstName +'!';
-let decades = ((birthYear - (birthYear - 1900) % 10) - 1900) /10;
+let greeting = 'Hello there ' + firstName +'!';
+let decades = ((birthYear - (birthYear - 1900) % 10) - 1900) / 10;
 
 
 
@@ -60,17 +60,21 @@ let decades = ((birthYear - (birthYear - 1900) % 10) - 1900) /10;
  //     NOTE: You MUST use code to determine which value to assign to `review`!
 
 let style;
+
 if (age < 35){
   style = 'hip';
-}else {
+}
+else {
   style = 'classic';
 }
 
 let review;
 let instructorIsAwesome = true;
+
 if (instructorIsAwesome === true){
   review = 'good';
-}else {
+}
+else {
   review = 'bad';
 }
 
@@ -90,7 +94,7 @@ if (instructorIsAwesome === true){
  //     then it should return the value for something that is Not a Number
 
 
-function math(numberOne, numberTwo, operation  ){
+function math (numberOne, numberTwo, operation){
 
   if (operation === 'add'){
     return (numberOne + numberTwo);
@@ -103,10 +107,11 @@ function math(numberOne, numberTwo, operation  ){
   }
   if (operation === 'divide'){
     return (numberOne / numberTwo);
-    }else {
-      return (NaN);
-    }
   }
+
+      return (NaN);
+
+}
 
 
 
@@ -134,16 +139,16 @@ function madlib (wordOne, wordTwo, wordThree, wordFour){
 
   if (wordOne === undefined){
     wordOne = 'bananas';
-    }
-  if (wordTwo === undefined){
-    wordTwo = 'bananas';
-   }
+  }
+    if (wordTwo === undefined){
+      wordTwo = 'bananas';
+  }
   if (wordThree === undefined){
     wordThree = 'bananas';
-      }
+    }
   if (wordFour === undefined){
     wordFour = 'bananas';
-    }
+  }
 
   return ('I prefer ' + wordOne + ' while I ' + wordTwo + ' so that I don\'t ' + wordThree + ' on the ' + wordFour + '.');
 }
@@ -165,9 +170,12 @@ function madlib (wordOne, wordTwo, wordThree, wordFour){
 
 
  function reverse (userString){
- for (let i = 0; i <= userString.length; i++)
- 	return(userString.charAt((userString.length + 1) - i));
- }
+  let a=""
+  for (var i = 0; i < userString.length + 1; i++)
+  a = (userString.charAt((userString.length +i) - userString.length)) + a;
+  console.log(a);
+  return ('"' + a + '"');
+}
 
 reverse("emosewa si nadroJ");
 
